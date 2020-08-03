@@ -12,21 +12,17 @@ class MainViewController: UIViewController, UITableViewDelegate,UITableViewDataS
 
     @IBOutlet weak var tableView: UITableView!
     
-    var products = [
-        Product(imageName:"uniqlo1",productName:"uniqlo1",numberOfRating:1,productDescription:"Good Product"),
-        Product(imageName:"uniqlo2",productName:"uniqlo2",numberOfRating:2,productDescription:"Good Product"),
-        Product(imageName:"uniqlo3",productName:"uniqlo3",numberOfRating:3,productDescription:"Good Product"),
-        Product(imageName:"uniqlo4",productName:"uniqlo4",numberOfRating:4,productDescription:"Good Product"),
-        Product(imageName:"uniqlo5",productName:"uniqlo5",numberOfRating:5,productDescription:"Good Product"),
-        Product(imageName:"uniqlo6",productName:"uniqlo6",numberOfRating:5,productDescription:"Good Product"),
-        Product(imageName:"uniqlo7",productName:"uniqlo7",numberOfRating:5,productDescription:"Good Product"),
-        Product(imageName:"uniqlo8",productName:"uniqlo8",numberOfRating:5,productDescription:"Good Product"),
-        Product(imageName:"uniqlo9",productName:"uniqlo9",numberOfRating:5,productDescription:"Good Product"),
-        Product(imageName:"uniqlo10",productName:"uniqlo10",numberOfRating:5,productDescription:"Good Product")
-    ]
+    var products: [Product] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        getData()
     }
+    
+    func getData() {
+        products = DataManager.shared.getProducts()
+    }
+    
     //MARK - UITableViewDelegate,UITableViewDataSource
     //So hang trong bang - nhieu section
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,7 +36,7 @@ class MainViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         cell.imageViewProduct?.image = UIImage(named: product.imageName!)
         cell.lblProductName?.text = product.productName
         cell.lblNumberOfRating?.text = ""
-        for _ in 1...(product.numberOfRating ?? 1) {
+        for _ in 1...(product.numberOfRating ?? 5) {
             cell.lblNumberOfRating?.text = (cell.lblNumberOfRating?.text ?? "") + "★"
         }
         cell.lblProductDescription?.text = product.productDescription
@@ -49,6 +45,16 @@ class MainViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("IndexPath : \(indexPath.row)")
-        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let productDetail = mainStoryboard.instantiateViewController(identifier: "ProductDetailViewController") as! ProductDetailViewController
+        self.present(productDetail, animated: true, completion: nil)
+        let product:Product = products[indexPath.row]
+        productDetail.productImageView.image = UIImage(named: product.imageName!)
+        productDetail.labelProductName.text = product.productName
+        productDetail.labelProductDescription.text = product.productDescription
+        productDetail.labelRating.text = ""
+        for _ in 1...(product.numberOfRating ?? 5) {
+            productDetail.labelRating.text = (productDetail.labelRating.text ?? "") + "★"
+        }
     }
 }

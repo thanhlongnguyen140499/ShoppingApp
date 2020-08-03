@@ -12,15 +12,19 @@ class MainProductViewController: UIViewController,
     UICollectionViewDelegate,
     UICollectionViewDataSource,
     UICollectionViewDelegateFlowLayout {
+    
     var collectionView: UICollectionView?
     let cellId = "ExampleCell"
     let cellSpacing:CGFloat = 10
 
     // read data
-    var products:[Product] = productData
-   
+    var products:[Product] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        getData()
+        
         view.backgroundColor = .red
         collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewLayout())
         collectionView?.translatesAutoresizingMaskIntoConstraints = false
@@ -41,7 +45,13 @@ class MainProductViewController: UIViewController,
         collectionView?.register(ProductCollectionViewCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.delegate = self
         collectionView?.dataSource = self
+        
     }
+    
+    func getData() {
+        products = DataManager.shared.getProducts()
+    }
+    
     //UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return products.count 
@@ -63,18 +73,29 @@ class MainProductViewController: UIViewController,
         //return CGSize(width: 100, height: 100)
 
         let width = (UIScreen.main.bounds.size.width - 3 * cellSpacing) / 2
-        let height = width
+        let height = width + 25
         return CGSize(width: width, height: height)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Index: \(indexPath)")
-
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let productDetail = mainStoryboard.instantiateViewController(identifier: "ProductDetailViewController") as! ProductDetailViewController
+        self.present(productDetail, animated: true, completion: nil)
+        let product:Product = products[indexPath.row]
+        productDetail.productImageView.image = UIImage(named: product.imageName!)
+        productDetail.labelProductName.text = product.productName
+        productDetail.labelProductDescription.text = product.productDescription        
+        productDetail.labelRating.text = ""
+        for _ in 1...(product.numberOfRating ?? 5) {
+            productDetail.labelRating.text = (productDetail.labelRating.text ?? "") + "★"
+        }
     }
 }
 
 extension MainProductViewController: ProductCollectionCellDelegate {
     func openProductDetail(indexPath: IndexPath) {
+        //press button
         print("ttt \(indexPath.row)")
     }
 }

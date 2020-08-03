@@ -13,11 +13,15 @@ class Product {
     var productName: String?
     var numberOfRating: Int?
     var productDescription: String?
-    convenience init(imageName: String, productName: String, numberOfRating: Int, productDescription: String) {
+    var productPrice: String?
+    convenience init(imageName: String, productName: String, numberOfRating: Int, productDescription: String, productPrice: String) {
         self.init()
         self.imageName = imageName
         self.productName = productName
         self.numberOfRating = numberOfRating
         self.productDescription = productDescription
+        self.productPrice = productPrice
     }
 }
+
+
