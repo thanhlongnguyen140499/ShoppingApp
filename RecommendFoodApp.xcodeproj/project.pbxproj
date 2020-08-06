@@ -25,6 +25,7 @@
 		74CF6A9224D0588D0074FFB2 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CF6A9124D0588D0074FFB2 /* Product.swift */; };
 		74CF6A9424D05A3D0074FFB2 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CF6A9324D05A3D0074FFB2 /* ProductTableViewCell.swift */; };
 		74F3FC9B24DC4FF300CBE209 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3FC9A24DC4FF300CBE209 /* Constants.swift */; };
+		74F3FCA524DC600A00CBE209 /* uniqlointro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 74F3FCA424DC600A00CBE209 /* uniqlointro.mp4 */; };
 		74F83C8E24D3083200A41412 /* MainProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F83C8D24D3083200A41412 /* MainProductViewController.swift */; };
 		74F83C9024D314D700A41412 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F83C8F24D314D700A41412 /* ProductCollectionViewCell.swift */; };
 		74FBA6BC24D675E100790F67 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FBA6BB24D675E100790F67 /* ProductDetailViewController.swift */; };
@@ -50,6 +51,7 @@
 		74CF6A9124D0588D0074FFB2 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		74CF6A9324D05A3D0074FFB2 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		74F3FC9A24DC4FF300CBE209 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		74F3FCA424DC600A00CBE209 /* uniqlointro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = uniqlointro.mp4; sourceTree = "<group>"; };
 		74F83C8D24D3083200A41412 /* MainProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProductViewController.swift; sourceTree = "<group>"; };
 		74F83C8F24D314D700A41412 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		74FBA6BB24D675E100790F67 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		74687A1124CC2E2F008CD6AE /* RecommendFoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				74F3FCA124DC59F100CBE209 /* Medias */,
 				74B2F25424DC2B1200D21A11 /* Helpers */,
 				748F288B24DA4763007E5C1B /* Storyboard */,
 				74CF6A8E24D0275D0074FFB2 /* Resources */,
@@ -170,6 +173,14 @@
 				74687A1B24CC2E30008CD6AE /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		74F3FCA124DC59F100CBE209 /* Medias */ = {
+			isa = PBXGroup;
+			children = (
+				74F3FCA424DC600A00CBE209 /* uniqlointro.mp4 */,
+			);
+			path = Medias;
 			sourceTree = "<group>";
 		};
 		BEAB2EBFC2B3EAD62E0ABF00 /* Pods */ = {
@@ -244,6 +255,7 @@
 			files = (
 				74687A1F24CC2E30008CD6AE /* LaunchScreen.storyboard in Resources */,
 				74B2F25C24DC3C7900D21A11 /* GoogleService-Info.plist in Resources */,
+				74F3FCA524DC600A00CBE209 /* uniqlointro.mp4 in Resources */,
 				74687A1C24CC2E30008CD6AE /* Assets.xcassets in Resources */,
 				74687A1A24CC2E2F008CD6AE /* Main.storyboard in Resources */,
 			);
