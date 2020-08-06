@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
 class Product {
     var imageName: String?
+    var image: UIImage?
     var productName: String?
     var numberOfRating: Int?
     var productDescription: String?

@@ -33,7 +33,13 @@ class MainViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTableViewCell") as! ProductTableViewCell
         let product:Product = products[indexPath.row]
-        cell.imageViewProduct?.image = UIImage(named: product.imageName!)
+        
+        if(product.image != nil) {
+            cell.imageViewProduct?.image = product.image
+        } else {
+            cell.imageViewProduct?.image = UIImage(named: product.imageName!)
+        }
+        
         cell.lblProductName?.text = product.productName
         cell.lblNumberOfRating?.text = ""
         for _ in 1...(product.numberOfRating ?? 5) {

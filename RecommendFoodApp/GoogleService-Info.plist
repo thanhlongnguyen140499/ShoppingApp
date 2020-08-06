@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>878856894890-umqkota5o11cmf0dinme09nr6et3mu8a.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.878856894890-umqkota5o11cmf0dinme09nr6et3mu8a</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBLXmh2C9sc0sGx5Yko9bKAnFoQHJOMfDI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>878856894890</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>thanhlong.com.RecommendFoodApp</string>
+	<key>PROJECT_ID</key>
+	<string>myshoppingiosapp</string>
+	<key>STORAGE_BUCKET</key>
+	<string>myshoppingiosapp.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:878856894890:ios:90675d7340c82f25d493d3</string>
+	<key>DATABASE_URL</key>
+	<string>https://myshoppingiosapp.firebaseio.com</string>
+</dict>
+</plist>

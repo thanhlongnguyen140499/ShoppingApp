@@ -55,9 +55,7 @@ class ProductDetailViewController: UIViewController {
         labelRating.topAnchor.constraint(equalTo: productImageView.bottomAnchor, constant: 20).isActive = true
         labelRating.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10).isActive = true
         labelRating.widthAnchor.constraint(equalToConstant: 110).isActive = true
-        labelRating.textAlignment = .center
         labelRating.font = UIFont.systemFont(ofSize: 20)
-        labelRating.backgroundColor = .red
-        labelRating.textColor = .yellow
+        labelRating.textColor = .systemYellow
     }
 }
