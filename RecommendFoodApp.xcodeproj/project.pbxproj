@@ -18,7 +18,6 @@
 		74B2F25124DC213F00D21A11 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B2F25024DC213F00D21A11 /* LoginViewController.swift */; };
 		74B2F25324DC214F00D21A11 /* HomeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B2F25224DC214F00D21A11 /* HomeLoginViewController.swift */; };
 		74B2F25624DC2B2300D21A11 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B2F25524DC2B2300D21A11 /* Utilities.swift */; };
-		74B2F25824DC377A00D21A11 /* LoginHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B2F25724DC377A00D21A11 /* LoginHomeViewController.swift */; };
 		74B2F25C24DC3C7900D21A11 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74B2F25B24DC3C7900D21A11 /* GoogleService-Info.plist */; };
 		74B8D5F324D948EA00E13FF5 /* NewProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8D5F224D948EA00E13FF5 /* NewProductViewController.swift */; };
 		74CF6A9024D040320074FFB2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CF6A8F24D040320074FFB2 /* MainViewController.swift */; };
@@ -44,7 +43,6 @@
 		74B2F25024DC213F00D21A11 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		74B2F25224DC214F00D21A11 /* HomeLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLoginViewController.swift; sourceTree = "<group>"; };
 		74B2F25524DC2B2300D21A11 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		74B2F25724DC377A00D21A11 /* LoginHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHomeViewController.swift; sourceTree = "<group>"; };
 		74B2F25B24DC3C7900D21A11 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		74B8D5F224D948EA00E13FF5 /* NewProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductViewController.swift; sourceTree = "<group>"; };
 		74CF6A8F24D040320074FFB2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 				74B2F24E24DC213400D21A11 /* SignUpViewController.swift */,
 				74B2F25024DC213F00D21A11 /* LoginViewController.swift */,
 				74B2F25224DC214F00D21A11 /* HomeLoginViewController.swift */,
-				74B2F25724DC377A00D21A11 /* LoginHomeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -327,7 +324,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B2F25824DC377A00D21A11 /* LoginHomeViewController.swift in Sources */,
 				74B2F25124DC213F00D21A11 /* LoginViewController.swift in Sources */,
 				74B2F24F24DC213400D21A11 /* SignUpViewController.swift in Sources */,
 				74B2F25624DC2B2300D21A11 /* Utilities.swift in Sources */,

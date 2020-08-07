@@ -33,7 +33,7 @@ class ProductDetailViewController: UIViewController {
         productImageView.translatesAutoresizingMaskIntoConstraints = false
         productImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
         productImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
-        productImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
+        productImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 60).isActive = true
         productImageView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 2.0/3.0).isActive = true
         
         //Autolayout labelProductName

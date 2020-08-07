@@ -57,7 +57,7 @@ class HomeLoginViewController: UIViewController {
         videoPlayerLayer = AVPlayerLayer(player: videoPlayer!)
         
         //Adjust the size and frame
-        videoPlayerLayer?.frame = CGRect(x: -self.view.frame.size.width*1, y: 0, width: self.view.frame.size.width*3.7, height: self.view.frame.size.height)
+        videoPlayerLayer?.frame = CGRect(x: -self.view.frame.size.width*1, y: 0, width: self.view.frame.size.width*3.5, height: self.view.frame.size.height)
         view.layer.insertSublayer(videoPlayerLayer!, at: 0)
         
         // Add it to the view and play it
